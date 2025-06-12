@@ -5,7 +5,6 @@
     box-sizing: border-box;
     font-family: sans-serif;
     text-decoration: none;
-    color: #fff;
 }
 
 /* Establer la variable para el color */
@@ -14,6 +13,7 @@
 }
 
 body {
+    color: #fff;
     height: 100%;
     width: 100%;
     /* Centrar los elementos */
@@ -33,6 +33,14 @@ header {
     font-size: 15px;
 }
 
+header a {
+    color: #fff;
+}
+
+header a:hover {
+    color: #4A628A;
+}
+
 /* Establecer margen interna para le botón saber más */
 .sabermas {
     padding-left: 120px;
@@ -40,9 +48,14 @@ header {
 
 /* Establecer elementos del encabezado como bloques en línea */
 header div {
-    font-style: none;
     width: 150px;
     display: inline-block;
+    background-color: #4A628A;
+}
+
+header div:hover {
+    background-color: #B9E5E8;
+    color: #4A628A;
 }
 
 /* # Dar estilos a caja que contiene la caja de información y formulario */
@@ -80,10 +93,12 @@ header div {
     height: 30px;
     border-radius: 10px;
     border: none;
-    background-color: var(--color);
+    background-color: transparent;
+    border: 1px solid var(--color);
     bottom: 20px;
-    color: #fff;
+    color: var(--color);
     font-size: 18px;
+    font-weight: bolder;
 }
 
 /* Dar estilos al botón 'saber más' */
@@ -100,6 +115,7 @@ header div {
 
 }
 
+/* Dar estilos a los titulos */
 .info h1, .formtitle {
     margin-top: 30px;
     margin-bottom: 10px;
@@ -108,6 +124,7 @@ header div {
     width: 300px;
 }
 
+/* Dar estilos al subtitulos de la caja info */
 .info h2 {
     margin: 10px 0px;
     color: var(--color);
@@ -169,21 +186,29 @@ input {
     list-style: square;
 }
 
-/* Las siguientes reglas aplican para pantallas de 390px o menos */
-@media (max-width: 440px) {
+@media (max-width: 748px) {
     
     header{
         background-color: #DFF2EB;
-        height: auto;
+        height: 50px;
         width: auto;
-        /* overflow-y: auto; */
+        overflow-y: scroll;
     }
     header div {
+        position: relative;
         background-color: #4A628A;
         height: 50px;
         width: 380px;
         display: block;
         margin-left: 50px;
+    }
+    
+    a::after {
+        font-family: "remixicon";
+        content: "\F4AF";
+        align-items: end;
+        position: relative;
+        right: 0;
     }
     
     .landing {
