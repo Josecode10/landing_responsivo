@@ -10,37 +10,42 @@
 
 /* Establer la variable para el color */
 :root {
-    --color: #7B4019;
-}
-
-li a {
-    color: var(--color)
+    --color: #4A628A;
 }
 
 body {
     height: 100%;
-    width: 70%;
-    margin: 0 auto;
-    background-color: #FFEEA9;
+    width: 100%;
+    /* Centrar los elementos */
+    margin: 0 auto; 
+    background-color: #DFF2EB;
 }
 
+/* Establecer reglas de estilo para el encabezado */
 header {
-    background-color: #FF7D29;
+    background-color: #4A628A;
     width: 1000px;
     height: 50px;
-    margin: 20px auto;
+    margin: 20px auto 50px;
     text-align: center;
     line-height: 50px;
     font-weight: bold;
     font-size: 15px;
 }
 
+/* Establecer margen interna para le botón saber más */
+.sabermas {
+    padding-left: 120px;
+}
+
+/* Establecer elementos del encabezado como bloques en línea */
 header div {
     font-style: none;
     width: 150px;
     display: inline-block;
 }
 
+/* # Dar estilos a caja que contiene la caja de información y formulario */
 .landing {
     width: 1000px;
     height: 500px;
@@ -48,11 +53,12 @@ header div {
     text-align: center;
 }
 
+/* Dar estilos a la caja de información y del formulario */
 .info,
 .form-container {
     width: 490px;
     height: 500px;
-    background-color: #FF7D29;
+    background-color: #B9E5E8;
     display: inline-block;
     vertical-align: top;
     margin: 0px auto;
@@ -62,13 +68,12 @@ header div {
     box-shadow: 0px 0px 50px -10px rgba(0, 100, 255, 0.5);
 }
 
+/* Dar estilos a la caja que da información al visitante */
 .info {
-    background-color: #FFBF78;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: #7AB2D3;
     padding: 20px;
 }
+
 
 .btn {
     width: 150px;
@@ -81,6 +86,7 @@ header div {
     font-size: 18px;
 }
 
+/* Dar estilos al botón 'saber más' */
 .btn1 {
     width: 150px;
     height: 30px;
@@ -123,9 +129,6 @@ form {
     margin-bottom: 20px;
 }
 
-.sabermas {
-
-}
 .subscripcion {
     width: 220px;
     height: 55px;
@@ -135,13 +138,13 @@ form {
 input {
     border-radius: 10px;
     height: 30px;
-    background-color: #e1e1e1;
+    background-color: #DFF2EB;
     padding-left: 10px;
     border: none;
 }
 
 [type="email"] {
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     width: 395px;
 }
 
@@ -166,16 +169,17 @@ input {
     list-style: square;
 }
 
-
-@media (max-width: 390px) {
+/* Las siguientes reglas aplican para pantallas de 390px o menos */
+@media (max-width: 440px) {
     
     header{
-        background-color: #FFEEA9;
+        background-color: #DFF2EB;
         height: auto;
+        width: auto;
         /* overflow-y: auto; */
     }
     header div {
-        background-color: #FF7D29;
+        background-color: #4A628A;
         height: 50px;
         width: 380px;
         display: block;
@@ -195,8 +199,6 @@ input {
         display: block;
         
     }
-
-    
 
     
 }
