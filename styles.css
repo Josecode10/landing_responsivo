@@ -1,4 +1,5 @@
-* {
+/* Establecer valores por defecto */
+* { 
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -7,6 +8,7 @@
     color: #fff;
 }
 
+/* Establer la variable para el color */
 :root {
     --color: #7B4019;
 }
@@ -16,17 +18,10 @@ li a {
 }
 
 body {
+    height: 100%;
+    width: 70%;
+    margin: 0 auto;
     background-color: #FFEEA9;
-}
-
-.phone {
-    color: var(--color);
-}
-
-.phone::before {
-    font-family: "remixicon";
-    content: "\EFE9";
-    padding-right: 10px;
 }
 
 header {
@@ -93,7 +88,7 @@ header div {
     border: 1px solid var(--color);
     background-color: transparent;
     bottom: 20px;
-    color: var(--color);
+    color: #fff;
     font-weight: bolder;
     font-size: 18px;
 
@@ -128,6 +123,9 @@ form {
     margin-bottom: 20px;
 }
 
+.sabermas {
+
+}
 .subscripcion {
     width: 220px;
     height: 55px;
@@ -142,15 +140,9 @@ input {
     border: none;
 }
 
-[type="email"],
-[type="tel"] {
+[type="email"] {
     margin-bottom: 15px;
     width: 395px;
-}
-
-[type="date"],
-[type="time"] {
-    width: 166px;
 }
 
 
@@ -158,14 +150,6 @@ input {
     margin-top: 30px;
     display: block;
     margin: 0px auto;
-}
-
-.btn::after,
-.btn1::after {
-    font-family: "remixicon";
-    content: "\F008";
-    padding-left: 10px;
-    font-size: 18px;
 }
 
 .ingresar {
@@ -177,6 +161,11 @@ input {
     padding-left: 20px;
     margin-bottom: 30px;
 }
+
+.lista li {
+    list-style: square;
+}
+
 
 @media (max-width: 390px) {
     
