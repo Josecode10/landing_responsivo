@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: sans-serif;
     text-decoration: none;
+    color: #fff;
 }
 
 :root {
@@ -30,17 +31,17 @@ body {
 
 header {
     background-color: #FF7D29;
-    width: 90%;
+    width: 1000px;
     height: 50px;
     margin: 20px auto;
     text-align: center;
     line-height: 50px;
     font-weight: bold;
-    font-style: none;
     font-size: 15px;
 }
 
-header nav ul li {
+header div {
+    font-style: none;
     width: 150px;
     display: inline-block;
 }
@@ -98,26 +99,17 @@ header nav ul li {
 
 }
 
-.info h1 {
-    margin-top: 60px;
-    margin-bottom: 0px;
+.info h1, .formtitle {
+    margin-top: 30px;
+    margin-bottom: 10px;
     color: #fff;
     font-size: 2.5rem;
     width: 300px;
 }
 
 .info h2 {
-    margin-top: 0px;
-    font-size: 2.5rem;
+    margin: 10px 0px;
     color: var(--color);
-}
-
-.info p {
-    margin-top: 10px;
-    margin-bottom: 15px;
-    font-size: 15px;
-    color: #fff;
-
 }
 
 form {
@@ -125,11 +117,9 @@ form {
     font-weight: bold;
 }
 
-.formtitle {
-    margin: 15px 0px 15px 0px;
-    text-align: left;
-    color: #fff;
-    margin-bottom: 50px;
+.secondtitle {
+    color: var(--color);
+    margin-bottom: 10px;
 }
 
 .cajasubscripcion {
@@ -189,11 +179,35 @@ input {
 }
 
 @media (max-width: 390px) {
+    
+    header{
+        background-color: #FFEEA9;
+        height: auto;
+        /* overflow-y: auto; */
+    }
+    header div {
+        background-color: #FF7D29;
+        height: 50px;
+        width: 380px;
+        display: block;
+        margin-left: 50px;
+    }
+    
+    .landing {
+    width: auto;
+    height: 500px;
+    margin: 0px auto;
+    text-align: center;
+    }
+
+
         .info,
     .form-container {
         display: block;
         
     }
+
+    
 
     
 }
