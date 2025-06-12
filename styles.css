@@ -52,7 +52,7 @@ header nav ul li {
     text-align: center;
 }
 
-.promo,
+.info,
 .form-container {
     width: 490px;
     height: 500px;
@@ -66,7 +66,7 @@ header nav ul li {
     box-shadow: 0px 0px 50px -10px rgba(0, 100, 255, 0.5);
 }
 
-.promo {
+.info {
     background-color: #FFBF78;
     background-size: cover;
     background-position: center;
@@ -98,21 +98,21 @@ header nav ul li {
 
 }
 
-.promo h1 {
-    margin-top: 130px;
+.info h1 {
+    margin-top: 60px;
     margin-bottom: 0px;
     color: #fff;
     font-size: 2.5rem;
     width: 300px;
 }
 
-.promo h2 {
+.info h2 {
     margin-top: 0px;
     font-size: 2.5rem;
     color: var(--color);
 }
 
-.promo p {
+.info p {
     margin-top: 10px;
     margin-bottom: 15px;
     font-size: 15px;
@@ -128,17 +128,17 @@ form {
 .formtitle {
     margin: 15px 0px 15px 0px;
     text-align: left;
-    color: var(--color);
+    color: #fff;
     margin-bottom: 50px;
 }
 
-.cajaname {
+.cajasubscripcion {
     width: 448px;
     height: 55px;
     margin-bottom: 20px;
 }
 
-.name {
+.subscripcion {
     width: 220px;
     height: 55px;
     display: inline-block;
@@ -165,6 +165,7 @@ input {
 
 
 [type="submit"] {
+    margin-top: 30px;
     display: block;
     margin: 0px auto;
 }
@@ -175,4 +176,24 @@ input {
     content: "\F008";
     padding-left: 10px;
     font-size: 18px;
+}
+
+.ingresar {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.lista {
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 390px) {
+        .info,
+    .form-container {
+        display: block;
+        
+    }
+
+    
 }
