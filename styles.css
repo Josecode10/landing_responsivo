@@ -53,6 +53,7 @@ header div {
     background-color: #4A628A;
 }
 
+/* Dar estilos al encabezado cuando el usuario posicione el curson en el elemento del mismo */
 header div:hover {
     background-color: #B9E5E8;
     color: #4A628A;
@@ -188,12 +189,15 @@ input {
 
 @media (max-width: 748px) {
     
+    /* Ajustar el header par un ancho de pantalla de máximo 748px */
     header{
         background-color: #DFF2EB;
         height: 50px;
         width: auto;
         overflow-y: scroll;
     }
+
+
     header div {
         position: relative;
         background-color: #4A628A;
