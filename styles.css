@@ -1,4 +1,5 @@
 /* Establecer valores por defecto */
+/* Para pantallas de más de 748px no requiere media queries */
 * { 
     margin: 0px;
     padding: 0px;
@@ -187,6 +188,7 @@ input {
     list-style: square;
 }
 
+/* La siguientes reglas aplican para pantallas 748px o menos */
 @media (max-width: 748px) {
     
     /* Ajustar el header par un ancho de pantalla de máximo 748px */
@@ -228,6 +230,4 @@ input {
         display: block;
         
     }
-
-    
 }
