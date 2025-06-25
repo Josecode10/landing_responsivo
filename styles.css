@@ -1,5 +1,7 @@
-/* Establecer valores por defecto */
 /* Para pantallas de más de 748px no requiere media queries */
+
+
+/* Establecer valores por defecto */
 * { 
     margin: 0px;
     padding: 0px;
