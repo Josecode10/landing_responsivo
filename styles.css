@@ -27,13 +27,14 @@ body {
 /* Establecer reglas de estilo para el encabezado */
 header {
     background-color: #4A628A;
-    width: 1000px;
+    /* width: 1000px; */
     height: 50px;
-    margin: 20px auto 50px;
+    margin: 20px auto 20px;
     text-align: center;
     line-height: 50px;
     font-weight: bold;
     font-size: 15px;
+    width: 90%;
 }
 
 header a {
@@ -64,10 +65,11 @@ header div:hover {
 
 /* # Dar estilos a caja que contiene la caja de información y formulario */
 .landing {
-    width: 1000px;
+    /* width: 1000px; */
     height: 500px;
     margin: 0px auto 20px auto;
     text-align: center;
+    width: 90%;
 }
 
 /* Dar estilos a la caja de información y del formulario */
@@ -197,7 +199,7 @@ input {
     header{
         background-color: #DFF2EB;
         height: 50px;
-        width: auto;
+        width: 90%;
         overflow-y: scroll;
     }
 
@@ -218,12 +220,12 @@ input {
         position: relative;
         right: 0;
     }
-    
+
     .landing {
-    width: auto;
-    height: 500px;
-    margin: 0px auto;
-    text-align: center;
+        /* width: auto; */
+        height: 500px;
+        margin: 0px auto;
+        text-align: center;
     }
 
 
