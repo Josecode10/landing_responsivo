@@ -19,7 +19,6 @@ body {
     color: #fff;
     height: 100%;
     width: 100%;
-    /* Centrar los elementos */
     margin: 0 auto; 
     background-color: #DFF2EB;
 }
@@ -45,11 +44,6 @@ header a:hover {
     color: #4A628A;
 }
 
-/* Establecer margen interna para le botón saber más */
-.sabermas {
-    padding-left: 120px;
-}
-
 /* Establecer elementos del encabezado como bloques en línea */
 header div {
     width: 150px;
@@ -64,7 +58,7 @@ header div:hover {
 }
 
 /* # Dar estilos a caja que contiene la caja de información y formulario */
-.landing {
+.section {
     /* width: 1000px; */
     height: 500px;
     margin: 0px auto 20px auto;
@@ -73,10 +67,10 @@ header div:hover {
 }
 
 /* Dar estilos a la caja de información y del formulario */
-.info,
-.form-container {
+.section__informacion,
+.section__boletines {
     width: 490px;
-    height: 500px;
+    height: 400px;
     background-color: #B9E5E8;
     display: inline-block;
     vertical-align: top;
@@ -85,20 +79,29 @@ header div:hover {
     margin-left: 0px;
     margin-right: 0px;
     box-shadow: 0px 0px 50px -10px rgba(0, 100, 255, 0.5);
+    padding: 30px;
 }
 
-/* Dar estilos a la caja que da información al visitante */
-.info {
-    background-color: #7AB2D3;
+.section__informacion--subtitulo,
+.section__formulario--subtitulo {
+    color: #4A628A;
+    margin: 20px 0px;
+}
+
+.section__lista {
     padding: 20px;
 }
 
+.section__lista--item {
+    list-style-position: inside;
+    list-style-type: none;
+}
 
-.btn {
+.section__boton { /* Dar estilos al elemento botón "saber más"  */
+    margin: 40px 0px 0px 120px;
     width: 150px;
     height: 30px;
     border-radius: 10px;
-    border: none;
     background-color: transparent;
     border: 1px solid var(--color);
     bottom: 20px;
@@ -107,131 +110,30 @@ header div:hover {
     font-weight: bolder;
 }
 
-/* Dar estilos al botón 'saber más' */
-.btn1 {
-    width: 150px;
-    height: 30px;
-    border-radius: 10px;
-    border: 1px solid var(--color);
-    background-color: transparent;
-    bottom: 20px;
-    color: #fff;
-    font-weight: bolder;
-    font-size: 18px;
+.section__formulario--usuario, 
+.section__formulario--contrasena {
+    position: relative;
+}
+
+label[for="Contraseña"],
+label[for="Contraseña"] {
+    position: absolute;
+    
+}
+
+input[type="text"],
+input[type="email"] {
+    position: absolute;
 
 }
 
-/* Dar estilos a los titulos */
-.info h1, .formtitle {
-    margin-top: 30px;
-    margin-bottom: 10px;
-    color: #fff;
-    font-size: 2.5rem;
-    width: 300px;
-}
-
-/* Dar estilos al subtitulos de la caja info */
-.info h2 {
-    margin: 10px 0px;
-    color: var(--color);
-}
-
-form {
-    padding: 20px;
-    font-weight: bold;
-}
-
-.secondtitle {
-    color: var(--color);
-    margin-bottom: 10px;
-}
-
-.cajasubscripcion {
-    width: 448px;
-    height: 55px;
-    margin-bottom: 20px;
-}
-
-.subscripcion {
-    width: 220px;
-    height: 55px;
-    display: inline-block;
-}
-
-input {
-    border-radius: 10px;
-    height: 30px;
-    background-color: #DFF2EB;
-    padding-left: 10px;
-    border: none;
-}
-
-[type="email"] {
-    margin-bottom: 30px;
-    width: 395px;
-}
 
 
-[type="submit"] {
-    margin-top: 30px;
-    display: block;
-    margin: 0px auto;
-}
 
-.ingresar {
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
 
-.lista {
-    padding-left: 20px;
-    margin-bottom: 30px;
-}
-
-.lista li {
-    list-style: square;
-}
 
 /* La siguientes reglas aplican para pantallas 748px o menos */
 @media (max-width: 748px) {
     
-    /* Ajustar el header par un ancho de pantalla de máximo 748px */
-    header{
-        background-color: #DFF2EB;
-        height: 50px;
-        width: 90%;
-        overflow-y: scroll;
-    }
-
-
-    header div {
-        position: relative;
-        background-color: #4A628A;
-        height: 50px;
-        width: 380px;
-        display: block;
-        margin-left: 50px;
-    }
     
-    a::after {
-        font-family: "remixicon";
-        content: "\F4AF";
-        align-items: end;
-        position: relative;
-        right: 0;
-    }
-
-    .landing {
-        /* width: auto; */
-        height: 500px;
-        margin: 0px auto;
-        text-align: center;
-    }
-
-
-        .info,
-    .form-container {
-        display: block;
-        
-    }
 }

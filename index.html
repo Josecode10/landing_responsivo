@@ -28,60 +28,47 @@
         </div>
     </header>
     
-    <section class="landing">
-        <div class="info">
-            <h1 class="infotitle">Academia de Inglés HelloTalk.</h1>
-            <h2 class="secondtitle">Conoce nuestro plan</h2>
-            <div class="lista">
+    <section class="section">
+        <div class="section__informacion">
+            <h1 class="section__informacion--titulo">Academia de Inglés HelloTalk.</h1>
+            <h2 class="section__informacion--subtitulo">Conoce nuestro plan</h2>
+            <div class="section__lista">
                 <ul>
-                    <li>Clases personalizadas con  instructores nativos.</li>
-                    <li>Salones virtuales para conversar con tus compañeros del mismo nivel.</li>
-                    <li>Clases virtuales cada dos horas todos los días.</li>
-                    <li>Salones multimedia en todas nuestras sedes.</li>
-                    <li>Mentor personalizado desde el primer días</li>
+                    <li class="section__lista--item">Clases personalizadas con  instructores nativos.</li>
+                    <li class="section__lista--item">Salones virtuales para conversar con tus compañeros del mismo nivel.</li>
+                    <li class="section__lista--item">Clases virtuales cada dos horas todos los días.</li>
+                    <li class="section__lista--item">Salones multimedia en todas nuestras sedes.</li>
+                    <li class="section__lista--item">Mentor personalizado desde el primer días</li>
                 </ul>
+                <button class="section__boton">¡Saber más!</button>
             </div>
             
-            <div class="sabermas">
-                <button class="btn1">¡Saber más!</button>
-            </div>
         </div>
-        <div class="form-container">
-            <form>
-                <h1 class="formtitle">Boletines Diarios</h1>
-                <h2 class="secondtitle">Suscríbete a nuestros boletines o actualiza preferencias:</h2>
-                <div class="cajasubcripcion">
-                    <div class="subscripcion">
-                        <div>
-                            <label for="Usuario">Usuario</label>
-                        </div>
-                        <div>
-                            <input type="text" placeholder="Usuario" required>
-                        </div>
+        <div class="section__boletines">
+            <h1 class="section__formulario--titulo">Boletines Diarios</h1>
+            <h2 class="section__formulario--subtitulo">Suscríbete a nuestros boletines o actualiza preferencias:</h2>
+
+            <div class="section__formulario--suscripcion">
+                <form class="section__formulario">
+                    <div class="section__formulario--usuario">
+                        <label for="Usuario">Usuario</label>
+                        <input type="text" placeholder="Usuario" required>
                     </div>
-                    <div class="subscripcion">
-                        <div>
-                            <label for="Contraseña">Contraseña</label>
-                        </div>
-                        <div>
-                            <input type="text" placeholder="Contraseña" required>
-                        </div>
+
+                    <div class="section__formulario--contrasena">
+                        <label for="Contraseña">Contraseña</label>
+                        <input type="text" placeholder="Contraseña" required>
                     </div>
-                    <div class="ingresar">
-                        <button type="submit" class="btn">Ingresar</button>
+
+                    <button type="submit" class="btn">Ingresar</button>
+
+                    <div class="section__formulario--recuperar_contrasena">
+                        <label for="Olvidaste la contraseña">¿Olvidaste la contraseña?</label>
+                        <input type="email" placeholder="Ingresar correo para recuperación" required>
+                        <button type="submit" class="btn">Enviar</button>
                     </div>
-                    
-                </div>
-                <div class="olvidar">
-                    <label for="Olvidaste la contraseña">¿Olvidaste la contraseña?</label>
-                </div>
-                <div>
-                    <input type="email" placeholder="Ingresar correo para recuperación" required>
-                </div>
-                <div class="enviar">
-                    <button type="submit" class="btn">Enviar</button>
-                </div>
-            </form>
+
+                </form>
         </div>
     </section>
     
