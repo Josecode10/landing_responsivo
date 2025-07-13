@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -40,7 +43,9 @@
                     <li class="section__lista--item">Salones multimedia en todas nuestras sedes.</li>
                     <li class="section__lista--item">Mentor personalizado desde el primer días</li>
                 </ul>
-                <button class="section__boton">¡Saber más!</button>
+                <div>
+                    <button class="section__informacion--boton">¡Saber más!</button>
+                </div>
             </div>
             
         </div>
@@ -48,28 +53,22 @@
             <h1 class="section__formulario--titulo">Boletines Diarios</h1>
             <h2 class="section__formulario--subtitulo">Suscríbete a nuestros boletines o actualiza preferencias:</h2>
 
-            <div class="section__formulario--suscripcion">
-                <form class="section__formulario">
-                    <div class="section__formulario--usuario">
-                        <label for="Usuario">Usuario</label>
-                        <input type="text" placeholder="Usuario" required>
-                    </div>
+            <div class="section__boletines--suscripcion">
+                
+                <div class="correo">
+                    <label for="email">Correo</label>
+                </div>
+                <div class="input">
+                    <input type="email" id="email">
+                </div>
+                <div>
+                    <button class="section__boletines--boton">Suscribirse</button>
+                </div>
 
-                    <div class="section__formulario--contrasena">
-                        <label for="Contraseña">Contraseña</label>
-                        <input type="text" placeholder="Contraseña" required>
-                    </div>
-                    <div class="section__formulario--ingresar">
-                        <button type="submit" class="btn">Ingresar</button>
-                    </div>
-
-                    <div class="section__formulario--recuperar_contrasena">
-                        <label for="Olvidaste la contraseña">¿Olvidaste la contraseña?</label>
-                        <input type="email" placeholder="Ingresar correo para recuperación" required>
-                    </div>
-                    <button type="submit" class="btn">Enviar</button>
-
-                </form>
+            </div>
+            <div class="section__boletines--icono">
+                <i class="ri-newspaper-line"></i>
+            </div>
         </div>
     </section>
     

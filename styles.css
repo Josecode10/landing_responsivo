@@ -2,11 +2,10 @@
 
 
 /* Establecer valores por defecto */
-* { 
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: sans-serif;
     text-decoration: none;
 }
 
@@ -19,8 +18,10 @@ body {
     color: #fff;
     height: 100%;
     width: 100%;
-    margin: 0 auto; 
+    margin: 0 auto;
     background-color: #DFF2EB;
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
 }
 
 /* Establecer reglas de estilo para el encabezado */
@@ -70,7 +71,7 @@ header div:hover {
 .section__informacion,
 .section__boletines {
     width: 490px;
-    height: 400px;
+    height: 430px;
     background-color: #B9E5E8;
     display: inline-block;
     vertical-align: top;
@@ -82,6 +83,11 @@ header div:hover {
     padding: 30px;
 }
 
+.section__informacion--titulo,
+.section__formulario--titulo {
+    font-size: 2.5rem;
+}
+
 .section__informacion--subtitulo,
 .section__formulario--subtitulo {
     color: #4A628A;
@@ -89,22 +95,19 @@ header div:hover {
 }
 
 .section__lista {
-    padding: 20px;
+    padding: 5px;
 }
 
 .section__lista--item {
-    list-style-position: inside;
-    list-style-type: none;
+    list-style-position: outside;
+    list-style-type: disc;
+    padding-bottom: 10px;
+    margin-left: 40px;
 }
 
-.section__lista--item::before {
-    font-family: "remixicon";
-    content: "\EB78";
-    
-}
-
-.section__boton { /* Dar estilos al elemento botón "saber más"  */
-    margin: 40px 0px 0px 120px;
+.section__informacion--boton,
+.section__boletines--boton { /* Dar estilos al elemento botón "saber más"  */
+    margin: 10px 0px 0px 0px;
     width: 150px;
     height: 30px;
     border-radius: 10px;
@@ -115,30 +118,37 @@ header div:hover {
     font-weight: bolder;
 }
 
-.section__formulario--usuario, 
-.section__formulario--contrasena {
+.section__boletines--suscripcion div {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#email {
+    border-radius: 10px;
+    height: 25px;
+    width: 100%;
+    border: none;
+}
+
+.correo {
+    color: var(--color);
+    font-weight: bold;
+    text-align: center;
+}
+
+.section__informacion--boton:hover,
+.section__boletines--boton:hover {
+    background-color: var(--color);
+    color: #fff;
+}
+
+.section__boletines--icono {
     position: relative;
 }
 
-label[for="usuario"],
-label[for="Contraseña"] {
+.ri-newspaper-line {
     position: absolute;
-    left: 0px;
-}
-
-input[type="text"] {
-    position: absolute;
+    font-size: 80px;
     right: 0px;
-
 }
 
-
-
-
-
-
-/* La siguientes reglas aplican para pantallas 748px o menos */
-@media (max-width: 748px) {
-    
-    
-}
